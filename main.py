@@ -6,13 +6,13 @@ from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
 
 EMAIL = "22f3002542@ds.study.iitm.ac.in"
-ALLOWED_ORIGIN = "*"
+ALLOWED_ORIGINS = ["https://dash-jwofiv.example.com"]
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[ALLOWED_ORIGIN],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=False,
     allow_methods=["GET", "OPTIONS"],
     allow_headers=["*"],
