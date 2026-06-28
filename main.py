@@ -5,8 +5,8 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
 
-EMAIL = "YOUR_LOGGED_IN_EMAIL"
-ALLOWED_ORIGIN = "https://YOUR-ASSIGNED-ORIGIN"
+EMAIL = "22f3002542@ds.study.iitm.ac.in"
+ALLOWED_ORIGIN = "*"
 
 app = FastAPI()
 
